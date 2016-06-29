@@ -11,13 +11,16 @@ namespace App1 {
     public partial class App : PrismApplication{
         protected override void OnInitialized() {
             InitializeComponent();
-            NavigationService.Navigate("TestNavigationPage/MainPage");
+            NavigationService.Navigate("TestNavigationPage/MainPage/TestTabbedPage/ViewC");
         }
 
         protected override void RegisterTypes() {
             Container.RegisterTypeForNavigation<MainPage>();
             Container.RegisterTypeForNavigation<ViewA>();
+            Container.RegisterTypeForNavigation<ViewB>();
+            Container.RegisterTypeForNavigation<ViewC>();
             Container.RegisterTypeForNavigation<TestNavigationPage>();
+            Container.RegisterTypeForNavigation<TestTabbedPage>();
         }
     }
 }
