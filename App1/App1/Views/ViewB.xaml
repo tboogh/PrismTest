@@ -4,5 +4,7 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="App1.Views.ViewB">
-  <Label Text="ViewB"></Label>
+  <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+    <Label Text="ViewB"></Label>
+  </StackLayout>
 </ContentPage>

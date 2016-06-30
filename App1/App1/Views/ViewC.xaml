@@ -4,5 +4,8 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="App1.Views.ViewC">
-  <Label Text="ViewC"></Label>
+  <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+    <Label Text="ViewC"></Label>
+    <Button Text="Modal ViewA" Command="{Binding ModalCommand}"></Button>
+  </StackLayout>
 </ContentPage>
